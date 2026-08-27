@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Invitación de cumpleaños de Agustín">
+  <title>¡Mi Cumpleaños! Agustín</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+      <!-- AUDIO-->
+
+  <audio id="birthdayMusic" loop preload="auto">
+    <source src="audio/sonido juego.mpeg" type="audio/mpeg">
+  </audio>
+
+  <button class="music-button" id="musicButton" type="button" aria-label="Reproducir música">♪</button>
+
+  <main>
+        <!-- INICIO-->
+
+    <section class="hero_section confirmation section">
+     <div class="hero-card">
+
+        <div class="hero-image">
+            <img src="assets/Mario-mejorcalidad-SF.png" alt="Mario volando">
+        </div>
+
+        <div class="hero-content">
+            <p class="hero-date">Domingo 11 de octubre · 17:00 hs</p>
+            <a class="button" href="#confirmacion">Confirmar asistencia</a>
+        </div>
+
+     </div>
+    </section>
+
+        <!-- CONTADOR-->
+
+    <section class="countdown section" aria-label="Cuenta regresiva">
+      <div class="countdown-wrapper">
+        <div class="countdown-group">
+          <div class="countdown-number">
+            <span class="countdown-block" id="d1">0</span>
+            <span class="countdown-block" id="d2">0</span>
+            <span class="countdown-block" id="d3">0</span>
+          </div>
+          <span class="countdown-label">DÍAS</span>
+        </div>
+
+        <span class="countdown-separator">:</span>
+
+        <div class="countdown-group">
+          <div class="countdown-number">
+            <span class="countdown-block" id="h1">0</span>
+            <span class="countdown-block" id="h2">0</span>
+          </div>
+          <span class="countdown-label">HORAS</span>
+        </div>
+
+        <span class="countdown-separator">:</span>
+
+        <div class="countdown-group">
+          <div class="countdown-number">
+            <span class="countdown-block" id="m1">0</span>
+            <span class="countdown-block" id="m2">0</span>
+          </div>
+          <span class="countdown-label">MINUTOS</span>
+        </div>
+
+        <span class="countdown-separator">:</span>
+
+        <div class="countdown-group">
+          <div class="countdown-number">
+            <span class="countdown-block" id="s1">0</span>
+            <span class="countdown-block" id="s2">0</span>
+          </div>
+          <span class="countdown-label">SEGUNDOS</span>
+        </div>
+      </div>
+    </section>
+
+        <!-- Info del día,  hora y salón-->
+
+
+    <section class="info section">
+      <div class="section-heading">
+        <span class="decor-star">🍄 ⭐</span>
+        <h2>Detalles de la aventura</h2>
+        <span class="decor-star">⭐ 🍄</span>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <div class="icon">🌟</div>
+          <h3>Fecha: Domingo 11 de octubre de 17:00 a 20:30 hs</h3>
+          <a
+            class="btn-calendar"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Cumpleaños&dates=20261011T170000/20261011T203000&location=Dante%20Quinterno%205441%2C%20E3100%2C%20Paran%C3%A1%2C%20Entre%20R%C3%ADos"
+            target="_blank"
+            rel="noopener"
+          >📲 Agendar</a>
+          <small>Ingreso de niños y adultos desde las 17:00</small>
+        </article>
+
+        <article class="info-card">
+          <div class="icon">🏰</div>
+          <h3>Lugar de la misión: Clemente Eventos</h3>
+            <a
+            class="btn-blue"
+            href="https://maps.app.goo.gl/wEd2DPfoK2nNYUVC8"
+            target="_blank"
+            rel="noopener"
+          >🏁 Google Maps</a>
+          <small>Dante Quinterno 5441, E3100 Paraná, Entre Ríos</small>
+        </article>
+
+        <article class="info-card">
+          <div class="icon">🚩🚩🚩</div>
+          <h3>¡iMPORTANTE!</h3>
+          <a class="btn confirmation-link" href="#confirmacion">¡Confirmar asistencia para asegurar tu lugar en la partida!</a>
+          <small>No te pierdas esta fiesta llena de monedas doradas, diversión y mucha música 🍄⭐🏰</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- Info del cumpleañero-->
+
+    <section class="birthday-person section">
+      <div class="person-photo">
+        <img src="assets/foto 1.jpg" alt="Foto del cumpleañero">
+      </div>
+
+      <div class="person-content">
+        <span class="eyebrow">El protagonista</span>
+        <h2>¡Hola! Soy <span>Agustín</span></h2>
+
+        <p>Mis súper habilidades son:</p>
+
+        <ol>
+          <li>Ser la estrella del baile: No necesita una estrella de invencibilidad para brillar en la pista; ¡sus pasos de baile activan el modo fiesta al instante! 🕺✨</li>
+          <li>El goleador del Reino Champiñón: Ama correr tras el balón y dar su mejor jugada en el campo de fútbol. ⚽🍄</li>
+          <li>Un cantante oficial: Siempre tiene la melodía perfecta para alegrarnos el día y cantar a todo volumen. 🎤🎶</li>
+          <li>Un artista en potencia: Le encanta llenar el mundo de color, creatividad y dibujos con sus pinturas. 🎨🖌️</li>
+          <li>El mejor amigo (¡el verdadero Player 1!): Su superpoder favorito es hacer amigos allá donde va, siempre listo para compartir la diversión en equipo. 🤝❤️</li>
+        </ol>
+
+        <p class="age">Cumplo <strong>4 años</strong> ✨🍰🥳</p>
+      </div>
+    </section>
+
+        <!-- FOTOS-->
+
+    <section class="gallery section">
+      <div class="section-heading">
+        <span class="decor-star">˙✧˖°📷 ༘ ⋆｡˚</span>
+        <h2>Mis aventuras</h2>
+        <span class="decor-star">˙✧˖°⋆｡˚</span>
+      </div>
+
+      <div class="gallery-grid">
+        <img src="assets/foto 2.jpg" alt="Foto del cumpleañero 1" loading="lazy">
+        <img src="assets/foto 4.jpg" alt="Foto del cumpleañero 3" loading="lazy">
+        <img src="assets/foto 3.jpg" alt="Foto del cumpleañero 2" loading="lazy">
+      </div>
+    </section>
+
+        <!-- cONFIRMACION-->
+
+
+    <section class="confirmation section" id="confirmacion">
+      <div class="confirmation-box">
+        <img src="assets/caja3d-sinf.png" class="caja-flotante" alt="Caja sorpresa">
+
+        <h2>¿Venís a festejar?</h2>
+        <p>Prepará tu superchampiñón, ajustá tu gorra y vení a vivir un día lleno de aventuras, risas y diversión.</p>
+        <p>Confirmar asistencia con:</p>
+
+        <a href="https://wa.me/5493434669803?text=Hola%21%20Quiero%20confirmar%20la%20asistencia%20al%20cumplea%C3%B1os%20de%20Agust%C3%ADn" class="whatsapp-linea" target="_blank" rel="noopener">
+          <span>Mamá</span>
+          <img src="assets/whatsapp.png" class="whatsapp-icon" alt="">
+          <span>+54 9 343 466-9803</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+      <!-- PIE-->
+
+  <footer class="footer">
+    <img src="assets/descarga (1)-Photoroom.png" alt="Personajes">
+    <p>Hecho con ❤️ para un día especial 🍋 @pequenio_limonn</p>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
