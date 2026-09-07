@@ -36,7 +36,6 @@ body::before {
   z-index: -1;
   background: url("assets/fondo_pagina.png") repeat;
   background-size: 1000px 500px;
-  opacity: 0.18;
   pointer-events: none;
 }
 
