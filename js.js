@@ -6,11 +6,11 @@ window.addEventListener("load", () => {
     music.play()
         .then(() => {
             musicButton.classList.add("playing");
-            musicButton.textContent = "♪";
+            musicButton.textContent = "♫";
             musicButton.setAttribute("aria-label", "Pausar música");
         })
         .catch((error) => {
-            console.log("El navegador bloqueó la reproducción automática:", error);
+            console.log("Autoplay bloqueado por el navegador:", error);
         });
 });
 
