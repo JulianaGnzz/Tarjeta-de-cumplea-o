@@ -1,0 +1,660 @@
+@media (max-width: 850px) {
+  .hero-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-image {
+    min-height: 450px;
+  }
+
+  .hero-content {
+    min-height: 260px;
+    padding: 15px 20px 25px;
+  }
+
+  .hero-content::after {
+    top: 30px;
+    right: 20px;
+    width: min(420px, 80vw);
+    height: 180px;
+  }
+
+  .birthday-person {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .person-photo {
+    width: min(330px, 80vw);
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    width: min(100% - 24px, 520px);
+    padding: 55px 0 0;
+  }
+
+  .hero {
+    padding-top: 25px;
+  }
+
+  .hero-card {
+    border-radius: 0 0 24px 24px;
+  }
+
+  .hero-image {
+    min-height: 330px;
+  }
+
+  .hero-content {
+    padding: 15px 20px 25px;
+  }
+
+  .hero-content::after {
+    top: 25px;
+    right: 10px;
+    width: calc(100% - 20px);
+    height: 140px;
+  }
+
+  .hero-date {
+    margin-top: 120px;
+  }
+
+  .info-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    gap: 12px;
+  }
+
+  .countdown-wrapper {
+    gap: 5px;
+  }
+
+  .countdown-block {
+    width: 34px;
+    height: 46px;
+    font-size: 34px;
+    border-width: 3px;
+    box-shadow: 3px 3px #000;
+  }
+
+  .countdown-separator {
+    font-size: 22px;
+  }
+
+  .confirmation-box {
+    padding: 35px 15px;
+  }
+
+  .whatsapp-linea {
+    flex-wrap: wrap;
+  }
+}
+
+/* Flotar caja*/ 
+
+@keyframes flotar {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Pulsar */
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+/* =========================================
+   RESPONSIVE - TODAS LAS PANTALLAS
+   ========================================= */
+
+/* Evita que imágenes y elementos se salgan de la pantalla */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 70px 5%;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.8rem, 5vw, 4.5rem);
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+
+/* TABLETS PEQUEÑAS / MÓVILES GRANDES */
+@media (max-width: 768px) {
+
+    .section {
+        padding: 70px 5%;
+    }
+
+    /* HEADER */
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* HERO */
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 60px 5%;
+    }
+
+    .hero p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-notes {
+        justify-content: center;
+    }
+
+    .hero-card {
+        order: -1;
+    }
+
+    /* CATEGORÍAS */
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* PRODUCTOS */
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* PLANES */
+
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plan.featured {
+        transform: none;
+    }
+
+    /* PASOS */
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* SOBRE NOSOTROS */
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    /* GALERÍA */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* FOOTER */
+
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+}
+
+
+/* MÓVILES */
+@media (max-width: 480px) {
+
+    .section {
+        padding: 55px 20px;
+    }
+
+    /* HEADER */
+
+    .header {
+        height: 68px;
+        padding: 0 20px;
+    }
+
+    .brand {
+        font-size: .9rem;
+    }
+
+    .brand-mark {
+        width: 32px;
+        height: 32px;
+    }
+
+    /* HERO */
+
+    .hero {
+        padding: 45px 20px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.4rem, 12vw, 3.2rem);
+        line-height: 1.05;
+    }
+
+    .hero p {
+        font-size: .95rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    /* TELÉFONO */
+
+    .phone {
+        width: 210px;
+        height: 410px;
+    }
+
+    /* CATEGORÍAS */
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* PRODUCTOS */
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 280px;
+    }
+
+    /* PASOS */
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    /* GALERÍA */
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-image {
+        height: 400px;
+    }
+
+    /* CONTACTO */
+
+    .contact-box {
+        padding: 45px 20px;
+    }
+
+    .contact-box h2 {
+        font-size: 2.2rem;
+    }
+
+    /* TÍTULOS */
+
+    .section-heading h2 {
+        font-size: 2.3rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 40px 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* BOTONES */
+
+    .btn {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   AJUSTE DEL HERO - INVITACIÓN DE AGUSTÍN
+   Este bloque se agrega al final para sobreescribir
+   únicamente lo necesario del responsive original.
+   ========================================================= */
+
+/* BASE: PC / pantallas grandes */
+.hero-card {
+    min-height: 0;
+    padding: 10px 18px 22px;
+    gap: 0;
+}
+
+.hero-image {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.hero-image img {
+    width: min(58%, 540px);
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.hero-content {
+    width: 100%;
+    min-height: 0;
+    padding: 2px 10px 8px;
+    text-align: center;
+    background: transparent;
+}
+
+.hero-content::after {
+    display: none;
+}
+
+.hero-date {
+    margin: 4px 0 18px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.button {
+    align-self: center;
+}
+
+/* Evita que las secciones queden demasiado separadas */
+.section {
+    padding-top: 22px;
+}
+
+.countdown {
+    padding-top: 18px;
+}
+
+/* TABLET */
+@media (max-width: 850px) {
+
+    .hero-card {
+        min-height: 0;
+        padding: 8px 16px 20px;
+        gap: 0;
+    }
+
+    .hero-image {
+        min-height: 0;
+    }
+
+    .hero-image img {
+        width: min(68%, 500px);
+    }
+
+    .hero-content {
+        min-height: 0;
+        padding: 2px 10px 8px;
+    }
+
+    .hero-content::after {
+        display: none;
+    }
+
+    .hero-date {
+        margin: 3px 0 16px;
+    }
+
+    .birthday-person {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        text-align: center;
+    }
+
+    .person-photo {
+        width: min(330px, 80vw);
+        margin: auto;
+    }
+}
+
+/* TABLET / MÓVIL GRANDE */
+@media (max-width: 768px) {
+
+    .section {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .hero {
+        padding-top: 10px;
+    }
+
+    .hero-card {
+        min-height: 0;
+        padding: 8px 14px 18px;
+    }
+
+    .hero-image img {
+        width: min(78%, 460px);
+    }
+
+    .hero-content {
+        padding: 0 8px 6px;
+    }
+
+    .hero-date {
+        margin: 3px 0 15px;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+
+    .section {
+        width: calc(100% - 20px);
+        max-width: 520px;
+        padding-top: 16px;
+    }
+
+    .hero {
+        padding-top: 0;
+    }
+
+    .hero-card {
+        min-height: 0;
+        padding: 8px 12px 18px;
+        border-radius: 0 0 24px 24px;
+    }
+
+    .hero-image {
+        min-height: 0;
+    }
+
+    .hero-image img {
+        width: min(92%, 430px);
+        max-height: 55vh;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .hero-content {
+        min-height: 0;
+        padding: 0 8px 4px;
+    }
+
+    .hero-content::after {
+        display: none;
+    }
+
+    /* Importante: elimina el espacio de 120px de tu responsive anterior */
+    .hero-date {
+        margin: 2px 0 15px;
+        font-size: 0.92rem;
+        line-height: 1.3;
+    }
+
+    .button {
+        padding: 11px 20px;
+        font-size: 0.95rem;
+    }
+
+    .info-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        gap: 12px;
+    }
+
+    .countdown-wrapper {
+        gap: 4px;
+    }
+
+    .countdown-block {
+        width: clamp(27px, 8vw, 38px);
+        height: clamp(38px, 11vw, 48px);
+        font-size: clamp(29px, 9vw, 42px);
+        border-width: 3px;
+        box-shadow: 3px 3px #000;
+    }
+
+    .countdown-separator {
+        font-size: 22px;
+    }
+
+    .confirmation-box {
+        padding: 28px 15px;
+    }
+
+    .whatsapp-linea {
+        flex-wrap: wrap;
+    }
+
+    .section-heading {
+        gap: 8px;
+        margin-bottom: 18px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(1.75rem, 8vw, 2.3rem);
+        line-height: 1;
+    }
+
+    .decor-star {
+        font-size: 1.35rem;
+    }
+}
+
+/* CELULARES PEQUEÑOS */
+@media (max-width: 380px) {
+
+    .hero-image img {
+        width: 96%;
+    }
+
+    .countdown-wrapper {
+        gap: 2px;
+    }
+
+    .countdown-block {
+        width: 25px;
+        height: 36px;
+        font-size: 27px;
+    }
+
+    .countdown-separator {
+        font-size: 19px;
+    }
+
+    .countdown-label {
+        font-size: 7px;
+    }
+}
