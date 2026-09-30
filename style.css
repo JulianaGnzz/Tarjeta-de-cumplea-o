@@ -34,7 +34,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: url("assets/fondo_pagina.jfif") repeat;
+  background: url("assets/fondo_pagina_2.png") repeat;
   background-size: 1000px 500px;
   pointer-events: none;
 }
